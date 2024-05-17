@@ -1,0 +1,430 @@
+.serif {
+    font-family: "Source Serif 4", serif;
+}
+.monospace {
+    font-family: "Cutive Mono", monospace;
+}
+.sans-serif {
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.horiz-nav {
+    background-color: #fff; 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.horizontal-nav {
+    margin: 0 3rem;
+}
+.nav-profile {
+    display: flex;
+    justify-content: center;
+    margin: 5px 2.5rem;
+}
+.nav-profile img.nav-profile-icon {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-top: 3px;
+}
+.nav-profile .nav-profile-name {
+    font-size: small;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+.nav-menu ul > li a {
+    font-weight: bolder;
+}
+.bars {
+    padding: 3px;
+}
+
+.vertical-nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 210px;
+    position: fixed;
+    top: 40vh;
+    margin-left: 10px;
+}
+.vertical-nav:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.vertical-nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 1.3rem;
+}
+.vertical-nav ul > li a {
+    color: #111;
+    font-size: larger;
+    padding: 10px 0;
+}
+.vertical-nav ul > li a:hover {
+    color: #00f;
+    font-size: xx-large;
+}
+
+.page {
+    height: 800px;
+    padding: 3rem;
+}
+.page-title {
+    text-align: center;
+    font-size: small;
+    margin: 2rem;
+}
+.page-title p {
+    color: #0a0;
+    font-size: medium;
+}
+.home-page {
+    background-color: #ffb700;
+    text-align: center;
+}
+.home-page img {
+    margin-top: 10vh;
+    width: 150px;
+    border: 3px solid #00f;
+    border-radius: 100%;
+}
+.home-page p i {
+    color: #fff;
+}
+.home-page .real-name {
+    color: #00f;
+}
+.home-page .nickname {
+    color: #f00;
+}
+.home-page .desc {
+    max-width: 400px;
+    text-align: justify;
+    margin: 5px auto;
+    padding: 0 1.1rem;
+}
+.home-page button {
+    font-size: small;
+    border: 1px solid #005;
+    border-radius: 10px;
+    background-color: #00f;
+    color: #fff;
+    padding: 8px 10px;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.home-page button:hover { 
+    animation: change-bg 5s linear infinite;
+}
+@keyframes change-bg {
+    0% {background-color: rgba(0, 0, 255, 0.1);}
+    50% {background-color: rgba(0, 0, 255, 0.5);}
+    100% {background-color: rgba(0, 0, 255, 1);}
+}
+.parent {
+    max-width: 150px;
+    position: relative;
+    margin: 5px auto;
+}
+.role {
+    position: absolute;
+    font-weight: bold;
+    font-size: small;
+}
+.role-left {
+    bottom: 8rem;
+    left: -4rem;
+    border: 2px solid #00a;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: #005;
+    padding: 3px 10px;
+    border-radius: 50vh;
+    transform: rotate(-50deg);
+}
+.role-right {
+    bottom: 0;
+    right: -6rem;
+    border: 2px solid #0a0;
+    background-color: rgba(0, 255, 0, 0.5);
+    color: #050;
+    padding: 3px 10px;
+    border-radius: 50vh;
+    transform: rotate(15deg);
+}
+
+.about-page {
+    height: 100%;
+}
+.skill{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+.skill i {
+    font-size: x-large;
+    padding: 0 5px;
+    color: #7209b7;
+}
+.skill-profile {
+    text-align: end;
+}
+.skill-profile p {
+    line-height: 10px;
+}
+.skill-profile p > .about-me {
+    color: #008;
+}
+.skill-desc img {
+    display: inline-block;
+    width: 200px;
+    border-bottom: 5px solid #005;
+}
+
+.projects-page {
+    background-color: #023047;
+    height: 100%;
+    color: #fff;
+}
+.pj-content {
+    margin: 0 1rem;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+.pj-card {
+    font-size: small;
+    background: url('../img/darkness.png');
+    max-width: 400px;
+    border: 2px solid #005;
+    border-radius: 15px;
+    margin: 1rem 1rem;
+    color: #fff;
+}
+.pj-card-header {
+    position: relative;
+}
+.pj-card-header h5 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: start;
+    padding: 5px 15px;
+    color: #f00;
+}
+.tool-bars {
+    position: absolute;
+    top: -1rem;
+    right: 0.5rem;
+}
+.tool-bars button {
+    border: 2px solid #00a;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: #fff;
+    padding: 0 8px;
+    border-radius: 50vh;
+    font-weight: bolder;
+    margin: 3px;
+}
+.tool-bars button:nth-child(even) {
+    border: 2px solid #0a0;
+    background-color: rgba(0, 255, 0, 0.5);
+    color: #fff;
+
+}
+.pj-card img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.pj-card-content {
+    text-align: center;
+}
+.pj-card-content address {
+    text-align: start;
+    padding: 15px 15px 0 15px;
+    color: #ffb700;
+}
+.pj-card-content p {
+    height: 100px;
+    padding: 0 15px;
+    text-align: justify;
+}
+.pj-card-content a > button {
+    font-size: medium;
+    width: 90%;
+    background-color: rgba(255, 255, 0, 0.5);
+    border: 2px solid #ffb700;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 10px;
+    margin-bottom: 1rem;
+}
+.pj-card-content a > button:hover {
+    background-color: #ffb700;
+    color: #fff;
+}
+
+
+.contact-page {
+    padding: 0;
+    padding-top: 3rem;
+    background: url('../img/nice_snow.png');
+}
+.contact-page .contact-me {
+    border-top: 3px solid #ffb700;
+    border-bottom: 3px solid #ffb700;
+    background-color: rgba(255, 255, 0, 0.1);
+    position: relative;
+}
+.contact-me .float-contact-style {
+    font-size: medium;
+    width: 50px;
+    background-color: #ffb700;
+    color: #fff;
+    border: 5px solid #f7f7f7;
+    position: absolute;
+    top: -2rem;
+    left: 48.4%;
+    padding: 8px;
+    border-radius: 100%;
+}
+.contact-page .thank {
+    font-size: large;
+    color: #f90;
+}
+.contact-page .prompt {
+    background: url('../img/prism.png');
+    font-size: small;
+}
+
+.hero__icon--container {
+    position: relative;
+}
+.hero__icon {
+    transition: all 500ms ease-in-out;
+}
+.hero__icon .parent {
+    transition: all 500ms ease-in-out;
+    visibility: visible;
+}
+.hero__icon .nav-profile {
+    visibility: hidden;
+    height: 0;
+    transition: all 500ms ease-in-out;
+}
+.nav-profile .nav-profile-name {
+    font-size: 0;
+    transition: all 500ms ease-in-out;
+}
+.nav-profile img.nav-profile-icon {
+    width: 0;
+    height: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.flying__icon {
+    position: fixed;
+    right: 5.5rem;
+    top: 0;
+    z-index: 2;
+
+    & .nav-profile {
+        visibility: visible;
+        width: 100%;
+        transition: all 500ms ease-in-out;
+    }
+    & .parent, .parent img {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-color: rgba(255, 0, 0, 0.5);
+        border-radius: 50vh;
+        transition: all 500ms ease-in-out;
+    }
+    & .role-left {
+        bottom: -3.3rem;
+        left: -2rem;
+        font-size: 0;
+        transition: all 500ms ease-in-out;
+    }
+    & .role-right {
+        font-size: 0;
+        bottom: -0.5rem;
+        right: -8rem;
+        transition: all 500ms ease-in-out;
+    }
+    & .nav-profile .nav-profile-name {
+        font-size: small;
+        transition: all 500ms ease-in-out;
+    }
+    & .nav-profile .nav-profile-icon {
+        width: 30px;
+        height: 30px;
+        transition: all 500ms ease-in-out;
+    }
+}
+
+@media (max-width: 1320px) {
+	.pj-content {
+        grid-template-columns: repeat(3, 1fr);
+	}
+    .contact-me .float-contact-style {
+        left: 48%;
+    }
+}
+@media (max-width: 960px) {
+    .flying__icon {
+        right: 3rem;
+    }
+	.pj-content {
+        grid-template-columns: repeat(2, 1fr);
+	}
+    .contact-me .float-contact-style {
+        left: 47.5%;
+    }
+}
+@media (max-width: 540px) {
+    .home-page .desc {
+        padding: 0 1rem;
+    }
+    .page-title {
+        margin: 1rem;
+    }
+    .contact-page > .page-title {
+        margin: 4rem;
+    }
+    .projects-page .pj-card {
+        margin: 1rem 0;
+    }
+    .horizontal-nav {
+        margin: 0 0.5rem;
+    }
+    .flying__icon {
+        right: 1.5rem;
+    }
+    .page-title {
+        text-align: start;
+    }
+	.pj-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+	}
+    .contact-me {
+        padding: 0 3.5rem;
+    }
+    .contact-me .float-contact-style {
+        left: 45.5%;
+    }
+}
